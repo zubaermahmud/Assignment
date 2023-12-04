@@ -14,3 +14,13 @@ class MyApp extends StatelessWidget{
     );
   }
 }
+class FirstPage extends StatelessWidget{
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+
+    )
+  };
+}
