@@ -29,12 +29,12 @@ class FirstPage extends StatelessWidget{
           backgroundColor: Colors.green[500],
         ),
       body: Card(
-        color: Colors.green,
+        color: Colors.white,
         child: Column(
           children: [
             ListTile(
               leading: Image.asset("assets/asus.png"),
-              title: const Text("Asus TUF Gaming A15",style: TextStyle(fontSize: 25),),
+              title: const Text("Asus TUF Gaming A15",style: TextStyle(fontSize: 20),),
               subtitle: const Text("A laptop for high performance gaming"),
             ),
             ElevatedButton(
@@ -45,7 +45,7 @@ class FirstPage extends StatelessWidget{
                 );
               },
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.amber[900]),
+                backgroundColor: MaterialStateProperty.all(Colors.blue[900]),
               ),
               child: const Text("Buy Now"),
             ),
