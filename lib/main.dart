@@ -9,7 +9,7 @@ void main() {
 class MyApp extends StatelessWidget{
   const MyApp({super.key});
 
-  
+
   @override
   Widget build(BuildContext context){
     return const MaterialApp(
@@ -28,9 +28,30 @@ class FirstPage extends StatelessWidget{
           title: const Text("My first Flutter App"),
           backgroundColor: Colors.green[500],
         ),
-        body: const Center(
-          child: Text("Hello World"),
+      body: Card(
+        color: Colors.green,
+        child: Column(
+          children: [
+            ListTile(
+              leading: Image.asset("assets/asus.png"),
+              title: const Text("Asus TUF Gaming A15",style: TextStyle(fontSize: 25),),
+              subtitle: const Text("A laptop for high performance gaming"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SecondPage()),
+                );
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.amber[900]),
+              ),
+              child: const Text("Buy Now"),
+            ),
+          ],
         ),
+      ),
       ),
     );
   }
