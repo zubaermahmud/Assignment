@@ -25,7 +25,7 @@ class FirstPage extends StatelessWidget{
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("My first Flutter App"),
+          title: const Text("Product Details"),
           backgroundColor: Colors.green[500],
         ),
       body: Card(
@@ -62,8 +62,13 @@ class SecondPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return const MaterialApp(
-
+    return Scaffold(
+      backgroundColor: Colors.blue,
+      appBar: AppBar(
+        title: Text('Buy Now'),
+        backgroundColor: Colors.green[100],
+      ),
+      
     );
   }
 }
