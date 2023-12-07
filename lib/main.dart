@@ -49,9 +49,9 @@ class FirstPage extends StatelessWidget{
               ),
               child: const Text("Buy Now"),
             ),ListTile(
-              leading: Image.asset('image/Asus.png'),
-              title: const Text("Asus TUF Gaming A15",style: TextStyle(fontSize: 20),),
-              subtitle: const Text("A laptop for high performance gaming"),
+              leading: Image.asset('image/Asus Vivobook 15.png'),
+              title: const Text("Asus VivoBook 15",style: TextStyle(fontSize: 20),),
+              subtitle: const Text("A laptop for professional work"),
             ),
             ElevatedButton(
               onPressed: () {
@@ -61,13 +61,13 @@ class FirstPage extends StatelessWidget{
                 );
               },
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.blue[900]),
+                backgroundColor: MaterialStateProperty.all(Colors.yellow),
               ),
               child: const Text("Buy Now"),
             ),ListTile(
-              leading: Image.asset('image/Asus.png'),
-              title: const Text("Asus TUF Gaming A15",style: TextStyle(fontSize: 20),),
-              subtitle: const Text("A laptop for high performance gaming"),
+              leading: Image.asset('image/Asus Zenbook 14.png'),
+              title: const Text("Asus Zenbook 14",style: TextStyle(fontSize: 20),),
+              subtitle: const Text("For professional work"),
             ),
             ElevatedButton(
               onPressed: () {
@@ -77,7 +77,7 @@ class FirstPage extends StatelessWidget{
                 );
               },
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.blue[900]),
+                backgroundColor: MaterialStateProperty.all(Colors.pink),
               ),
               child: const Text("Buy Now"),
             ),
@@ -172,7 +172,7 @@ class PaymentMethodButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           border: Border.all(color: Colors.black),
         ),
-        child: Image.asset(icon), // Replace 'assets/bkash.png' with the actual path to your icon
+        child: Image.asset(icon),
       ),
     );
   }
