@@ -101,21 +101,21 @@ class SecondPage extends StatelessWidget{
       body: Column(
         children: [
           const SizedBox(height: 16),
-          const Text('Choose Payment Method:', style: TextStyle(fontSize: 16)),
+          const Text('Choose Payment Method:', style: TextStyle(fontSize: 15)),
           const SizedBox(height: 16),
           const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              PaymentMethodButton(icon: 'image/Bkash.png'),
-              SizedBox(width: 16),
-              PaymentMethodButton(icon: 'image/Nagad.png'),
-              SizedBox(width: 16),
-              PaymentMethodButton(icon: 'image/Visa.png'),
-              SizedBox(width: 16),
-              PaymentMethodButton(icon: 'image/Mastercard.png'),
+              payment(icon: 'image/Bkash.png'),
+              SizedBox(width: 10),
+              payment(icon: 'image/Nagad.png'),
+              SizedBox(width: 10),
+              payment(icon: 'image/Visa.png'),
+              SizedBox(width: 10),
+              payment(icon: 'image/Mastercard.png'),
             ],
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 15),
           DropdownButton<String>(
             value: 'Select City for delivery',
             onChanged: (value) {},
@@ -154,8 +154,8 @@ class SecondPage extends StatelessWidget{
     );
   }
 }
-class PaymentMethodButton extends StatelessWidget {
-  const PaymentMethodButton({
+class payment extends StatelessWidget {
+  const payment({
     Key? key,
     required this.icon,
   }) : super(key: key);
@@ -167,7 +167,7 @@ class PaymentMethodButton extends StatelessWidget {
     return InkWell(
       onTap: () {},
       child: Container(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           border: Border.all(color: Colors.black),
